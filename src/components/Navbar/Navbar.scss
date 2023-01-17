@@ -1,0 +1,180 @@
+// Define Nav bar style
+.app__navbar {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 1rem 2rem;
+  background: rgba(0, 0, 0, 0.9);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(43, 49, 165, 0.18);
+  position: fixed;
+  z-index: 2;
+}
+
+// Define Logo style
+.app__navbar-logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  //   Define the image's style inside of the logo
+  img {
+    width: 45px;
+    height: 45px;
+
+    // Define the style if the screen is large than 2000px
+    @media screen and (min-width: 2000px) {
+      width: 180px;
+      height: 40px;
+    }
+  }
+}
+
+// Define Link
+.app__navbar-links {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  list-style: none;
+
+  // Define the li's style inside of links
+  li {
+    margin: 0 1rem;
+    cursor: pointer;
+
+    flex-direction: column;
+    // Define the div's and a's style inside of the li
+    div {
+      width: 5px;
+      height: 5px;
+      background: transparent;
+      border-radius: 50%;
+    }
+
+    a {
+      color: var(--white-color);
+      // Remove ugly underline of the text
+      text-decoration: none;
+      flex-direction: column;
+      //Make the text as uppercase and make it strong
+      text-transform: uppercase;
+      font-weight: 500;
+
+      transition: all 0.3s ease-in-out;
+
+      //hover Inside of this "a"
+      &:hover {
+        color: var(--secondary-color);
+      }
+    }
+    //hover Inside of this "li"
+    &:hover {
+      div {
+        color: var(--secondary-color);
+      }
+    }
+  }
+
+  //when the screen size less than 900px
+  @media screen and (max-width: 900px) {
+    // Make the content as none, which means hide the content
+    display: none;
+  }
+}
+
+// Define the style of navbar's menu
+.app__navbar-menu {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--secondary-color);
+  //   target SVG inside of the button
+  svg {
+    width: 70%;
+    height: 70%;
+    color: var(--white-color);
+  }
+  //   target the div inside oof the button
+  div {
+    position: fixed;
+    // make the bar to appear at the top
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 5;
+
+    padding: 1rem;
+
+    width: 80%;
+    height: 100vh;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+
+    background: url("../../assets/bgWhite.png");
+    background-color: var(--black-color);
+    background-size: cover;
+    background-repeat: repeat;
+
+    // add a box Shadow on top
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.18);
+
+    // style close icon
+    svg {
+      width: 35px;
+      height: 35px;
+      color: var(--secondary-color);
+      margin: 0.5rem 1rem;
+    }
+    // style list
+    ul {
+      // Remove bullet points
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-direction: column;
+      //   changing li to make the button list appear on the top
+      li {
+        margin: 1rem;
+
+        a {
+          color: var(--white-color);
+          text-decoration: none;
+          font-size: 1rem;
+          text-transform: uppercase;
+          font-weight: 500;
+
+          transition: all 0.3s ease-in-out;
+
+          //hover Inside of this "a"
+          &:hover {
+            color: var(--secondary-color);
+          }
+        }
+      }
+    }
+  }
+  // If we expand screen over 900 pixels, the menu will disappear
+  @media screen and (min-width: 900px) {
+    display: none;
+  }
+}
