@@ -8,13 +8,12 @@ import "./App.scss";
 function App() {
   return (
     <div className="app">
-      {/* <Navbar />
+      <Navbar />
       <Header />
       <About />
       <Work />
       <Skills />
-      <Footer /> */}
-      <a> aaa</a>
+      <Footer />
     </div>
   );
 }
