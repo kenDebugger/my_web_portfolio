@@ -31,6 +31,14 @@ const data = [
     imgUrl: images.c_sharp,
     tags: ["C#"],
   },
+  {
+    title: "Event Master",
+    description: "Firebase, React.js, Frame-motion, SASS",
+    projectLink: "https://event-master-web-app.firebaseapp.com/",
+    codeLink: "https://github.com/SuperKoalaa/event_master_web_app",
+    imgUrl: images.SDLC,
+    tags: ["Web App", "React JS"],
+  },
 ];
 const tags = ["Web App", "AWS Amplify", "C#", "React JS", "All"];
 
