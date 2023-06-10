@@ -8,20 +8,26 @@ import { AppWrap, MotionWrap } from "../../wrapper";
 // Enter Data ------ This kind of data can be store in DynamoDB later
 const abouts = [
   {
-    title: "Junior Software Tester",
+    title: "IT Programmer",
     description:
-      "I am crrently working in JAC as Casual Junior Software Tester",
+      "Currently employed at Hease Mathematic in the capacity of an IT Programmer.",
+    imgUrl: images.HeaseMathematic,
+  },
+  {
+    title: "Junior Software Tester",
+    description: "Previously worked at JAC as a Casual Junior Software Tester.",
     imgUrl: images.JAC,
   },
   {
     title: "Web Developer",
-    description: "I have done internship in ThincHealth as Web Developer.",
+    description:
+      "Served as a Web Developer during an internship at ThincHealth.",
     imgUrl: images.thinchealth,
   },
   {
     title: "Bachelor of Computer Science",
     description:
-      "I am graduated from The University of Adelaide, Major is Computer Sicence with Artificial Intelligence.",
+      "Graduated from The University of Adelaide, with a major in Computer Science and a focus on Artificial Intelligence.",
     imgUrl: images.UoA,
   },
 ];

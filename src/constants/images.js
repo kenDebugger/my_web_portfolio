@@ -17,6 +17,7 @@ import redux from "../assets/redux.png";
 import sass from "../assets/sass.png";
 import typescript from "../assets/typescript.png";
 import vue from "../assets/vue.png";
+import ruby_on_rails from "../assets/ruby_on_rails.png";
 
 import about01 from "../assets/about01.png";
 import about02 from "../assets/about02.png";
@@ -39,6 +40,7 @@ import browserStack from "../assets/browserstack.png";
 import slack from "../assets/slack.png";
 import aws_amplify from "../assets/aws_amplify.png";
 import JAC from "../assets/JAC.png";
+import HeaseMathematic from "../assets/haese_mathematic.png";
 import thinchealth from "../assets/thinchealth.png";
 import UoA from "../assets/UoA.png";
 import SDLC from "../assets/SDLC.png";
@@ -99,4 +101,6 @@ export default {
   AI,
   ML,
   CV,
+  HeaseMathematic,
+  ruby_on_rails,
 };

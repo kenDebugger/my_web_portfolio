@@ -61,6 +61,11 @@ const test_data_skills = [
     bgColor: "white",
     icon: images.javascript,
   },
+  {
+    name: "Ruby On Rails",
+    bgColor: "white",
+    icon: images.ruby_on_rails,
+  },
 ];
 
 const test_data_experience = [
@@ -86,6 +91,11 @@ const test_data_experience = [
         name: "Casual Junior Software Tester",
         company: "James Anthony Consulting",
         desc: "Used C# & Selenium to write the automatic testing script for specific project.",
+      },
+      {
+        name: "IT Programmer",
+        company: "Hease Mathematics",
+        desc: "....",
       },
     ],
   },
