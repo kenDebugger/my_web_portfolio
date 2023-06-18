@@ -31,13 +31,11 @@ const abouts = [
     imgUrl: images.UoA,
   },
 ];
-const head_text_data =
-  "With a great passion for solving problems, I am dedicated to using coding to simplify complex issues.";
 
 const About = () => {
   return (
     <>
-      <h2 className="head-text">{head_text_data}</h2>
+      <h2 className="head-text">Experience</h2>
       <div className="app__profiles">
         {abouts.map((about, index) => (
           <motion.div
