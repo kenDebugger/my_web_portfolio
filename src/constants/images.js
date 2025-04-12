@@ -53,7 +53,7 @@ import AI from "../assets/artificial-intelligence.png";
 import ML from "../assets/machine-learning.png";
 import CV from "../assets/computer-vision.png";
 
-export default {
+const images = {
   email,
   mobile,
   api,
@@ -104,3 +104,5 @@ export default {
   HeaseMathematic,
   ruby_on_rails,
 };
+
+export default images;
