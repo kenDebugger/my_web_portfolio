@@ -1,9 +1,9 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-import { images } from "../../constants";
 import "./Header.scss";
 import { AppWrap } from "../../wrapper";
+import LetterRain from "./LetterRain";
 
 const Header = () => (
   <>
@@ -32,13 +32,9 @@ const Header = () => (
         </div>
       </div>
 
-      {/* Photo */}
+      {/* Letter rain */}
       <div className="img-container">
-        <img
-          className="app__header-img"
-          src={images.profile}
-          alt="profile_bg"
-        />
+        <LetterRain />
       </div>
     </div>
   </>
